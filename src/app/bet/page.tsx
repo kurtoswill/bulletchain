@@ -121,27 +121,6 @@ export default function BettingPage() {
                         </div>
                     </div>
 
-                    {/* Custom Amount */}
-                    <div className="mb-8">
-                        <h3 className="text-red-300 font-semibold mb-4 text-center">Custom Amount</h3>
-                        <div className="relative">
-                            <div className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">
-                                <DollarSign className="w-5 h-5" />
-                            </div>
-                            <input
-                                type="number"
-                                value={customAmount}
-                                onChange={handleCustomAmountChange}
-                                placeholder="0.00"
-                                step="0.001"
-                                min="0"
-                                className="w-full pl-12 pr-16 py-4 bg-black/60 border-2 border-gray-700 rounded-xl text-white text-lg font-medium focus:border-yellow-500 focus:outline-none transition-all duration-300"
-                            />
-                            <div className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 font-medium">
-                                ETH
-                            </div>
-                        </div>
-                    </div>
 
                     {/* Bet Summary */}
                     {getCurrentBet() > 0 && (

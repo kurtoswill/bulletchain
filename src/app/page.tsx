@@ -32,15 +32,8 @@ export default function HomePage() {
     ];
 
     const handleGameModeSelect = (gameMode) => {
-        // Navigate to betting page with selected game mode
-        // You can use Next.js router or your preferred navigation method
-        console.log(`Navigating to betting page for: ${gameMode.label}`);
-
-        // Example with Next.js router (uncomment when using in your app):
-        // router.push(`/betting?mode=${gameMode.id}`);
-
-        // For now, we'll just log the selection
-        alert(`Selected: ${gameMode.label}\n\nWould navigate to betting page...`);
+        // Navigate to betting page
+        window.location.href = '/bet';
     };
 
     return (
